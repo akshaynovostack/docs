@@ -20,12 +20,6 @@
               "quickstart",
               "development"
             ]
-          },
-          {
-            "group": "Crm Release Notes",
-            "pages": [
-              "crm-release-notes/v3"
-            ]
           }
         ]
       },
@@ -35,7 +29,7 @@
           {
             "group": "Release Notes",
             "pages": [
-              "crm-release-notes/v3"
+              "crm-release-notes/v3.0.0"
             ]
           }
         ]
