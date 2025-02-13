@@ -35,10 +35,10 @@
         ]
       },
       {
-        "tab": "API Reference",
+        "tab": "Crm",
         "groups": [
           {
-            "group": "API Documentation",
+            "group": "Release Notes",
             "pages": [
               "api-reference/introduction"
             ]
