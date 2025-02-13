@@ -64,12 +64,12 @@
         {
           "anchor": "Ruloans",
           "href": "https://ruloans.com",
-          "icon": "image"
+          "icon": "user"
         },
         {
           "anchor": "Ruconnect",
           "href": "https://ruconnect.in",
-          "icon": "image"
+          "icon": "indian-rupee-sign"
         }
       ]
     }
