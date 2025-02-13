@@ -22,14 +22,9 @@
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Crm Release Notes",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "crm-release-notes/v3.0.0"
             ]
           }
         ]
