@@ -49,6 +49,11 @@
           "anchor": "Ruconnect",
           "href": "https://ruconnect.in",
           "icon": "indian-rupee-sign"
+        },
+         {
+          "anchor": "Crm",
+          "href": "https://crm.ruloans.com",
+          "icon": "gauge"
         }
       ]
     }
