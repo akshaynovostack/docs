@@ -33,7 +33,7 @@
           {
             "group": "Utils",
             "pages": [
-              "crm/utils/regex-help.mdx"
+              "crm/utils/regex-help"
             ]
           }
         ]
