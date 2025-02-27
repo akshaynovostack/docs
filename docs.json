@@ -32,6 +32,12 @@
             ]
           },
           {
+            "group": "Marketing",
+            "pages": [
+              "events/event"
+            ]
+          },
+          {
             "group": "Utils",
             "pages": [
               "crm/utils/regex-help"
