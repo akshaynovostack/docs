@@ -1,214 +1,143 @@
-# **[Ruloans CRM Finance]{.underline}**![](./image1.png){width="2.776042213473316in" height="1.730138888888889in"}
+---
+title: "Payout Documentation"
+---
 
-# **Payout Module Documentation**
+![](./image1.png)
 
-## **Prepared By:** Aparmita Srivastav
+## Introduction
 
-## **Introduction**
+The **Ruloans CRM Finance Module** is designed to streamline financial processes within the CRM, ensuring efficient handling of transactions, claims, payouts, and case management. This document provides a detailed overview of the module's workflow as represented in the flowchart.
 
-The Ruloans CRM Finance Module is designed to streamline financial
-processes within the CRM, ensuring efficient handling of transactions,
-claims, payouts, and case management. This document provides a detailed
-overview of the module\'s workflow as represented in the flowchart.
+![](./image7.png)
 
-![](./image7.png){width="6.567708880139983in"
-height="4.930928477690289in"}
+## Overview of the Payout Module
 
-## 
+The **Payout Module** consists of four primary stages:
 
-## **Overview of the Payout Module**
+1. **Awaited**
 
-The Payout module consists of four primary stages:
+2. **In Progress**
 
-1.  **Awaited**
+3. **Processed**
 
-2.  **Progress**
+4. **Rejected**
 
-3.  **Processed**
+Each stage contains specific sub-processes that manage the flow of financial cases through the CRM system.
 
-4.  **Rejected**
+![](./image2.png)
 
-Each stage contains specific sub-processes that manage the flow of
-financial cases through the CRM system.
+### 1. Awaited Stage
 
-![](./image2.png){width="4.786458880139983in"
-height="0.6121052055993in"}
+The **Awaited** stage is the initial phase where cases require specific actions before moving forward.
 
-### **1. Awaited Stage**
+* **Claim Pending:** Cases that are awaiting claim initiation. These leads come from both the App and the Web App.
 
-The \'Awaited\' stage is the initial phase where cases await specific
-actions before moving forward.
+* **Payout Pending:** Cases awaiting payout processing. These cases belong to DSAs whose payout is not yet set and will remain in this status until configured.
 
--   **Claim Pending:** Cases that are pending claim initiation.These
-    > leads come through both the App and the Web App.
+  ![](./image8.png)
 
--   **Payout Pending:** Cases waiting for payout processing. These cases
-    > belong to DSAs whose payout is not yet set and will remain in this
-    > status until their payout is
-    > configured.![](./image8.png){width="0.5520833333333334in"
-    > height="0.5208333333333334in"}
+  **Note:** Cases under "Payout Pending" status have no assigned payout for the **Direct Selling Agent (DSA).**
 
-    -   **Note:** The DSA (Direct Selling Agent) payout is not set for
-        > cases under \'Payout Pending\' status.
+![](./image6.png)
 
-![](./image6.png){width="3.682292213473316in"
-height="0.878426290463692in"}
+### 2. In Progress Stage
 
-### **2. Progress Stage**
+In the **In Progress** stage, cases are actively being processed.
 
-In the \'Progress\' stage, cases are actively being worked on.
+* **Multi-Funded Pending:** Cases that exist in the data but are duplicated due to new entries with the same details. These require validation to prevent duplication and funding conflicts.
 
--   **Multi Funded Pending:** Cases that already exist in the data and
-    > are duplicated by feeding new cases with the same details. These
-    > require validation to avoid duplication and funding conflicts.
+* **Banker Confirmation Pending:** Cases awaiting confirmation from the banker.
 
--   **Banker Confirmation Pending:** Awaiting confirmation from the
-    > banker.
+* **Pending:** Cases on hold for review. After review, they are either sent to ERP for processing or deleted if issues are identified.
 
--   **Pending:** Cases that are on hold for review. After review, these
-    > cases are either sent to ERP for processing or deleted if issues
-    > are identified.
+![](./image5.png)
 
-![](./image5.png){width="5.067708880139983in"
-height="0.8765223097112861in"}
+### 3. Processed Stage
 
-### **3. Processed Stage**
+Once cases progress through the previous stages, they reach the **Processed** status.
 
-Once the cases have moved through the progress stage, they reach
-\'Processed\' status.
+* **Sent to ERP:** Cases forwarded to the ERP system for integration.
 
--   **Sent to ERP:** Cases forwarded to the ERP system for integration.
+* **Approved Cases:** Cases that have been reviewed and approved.
 
--   **Approved Cases:** Cases that have been reviewed and approved.
+* **WIP Cases (Work in Progress):** Cases still being handled.
 
--   **WIP Cases (Work in Progress):** Cases that are still being
-    > handled.
+* **Not Found Cases:** Cases that could not be located within the system.
 
--   **Not Found Cases:** Cases that could not be located within the
-    > system.
+* **Error Cases:** Cases with issues that require resolution.
 
--   **Error Cases:** Cases with issues that need to be resolved.
+![](./image3.png)
 
-![](./image3.png){width="5.640625546806649in"
-height="0.8316305774278215in"}
+### 4. Rejected Stage
 
-### **4. Rejected Stage**
+Cases that do not meet requirements or encounter unresolved issues are moved to the **Rejected** stage.
 
-Cases that do not meet requirements or encounter insurmountable issues
-are moved to the \'Rejected\' stage.
+* **Multi-Funded Confirmed:** Cases rejected due to confirmed multi-funding conflicts.
 
--   **Multi Funded Confirmed:** Rejected cases due to confirmed
-    > multi-funding conflicts.
+* **Deleted:** Cases removed from the system.
 
--   **Deleted:** Cases that have been removed from the system.
+![](./image4.png)
 
-![](./image4.png){width="3.8281255468066493in"
-height="0.8793318022747156in"}
+## Understanding the Flow of Cases in CRM
 
-## 
+### Starting with Manual Entry, App, Web App, and Excel Import
 
-## 
+Cases entered manually, through Excel import, or via the App and Web App follow the process outlined below:
 
-## **Understanding the Flow of Cases in CRM**
+After data entry, cases are categorized into the appropriate sections:
 
-## **Starting with Manual Entry, App, WebApp and Excel Import**
+* **Claim Pending**
 
-## The flow of cases entered manually, through Excel import, or via app and web app follows the process outlined in the following details :
+* **Payout Pending**
 
-> After manual entry, app, web app, and Excel import, cases are shifted
-> to the appropriate sections listed below:
+* **Pending**
 
--   Claim Pending
+* **Banker Confirmation Pending**
 
--   Payout pending
+* **Multi-Funded Pending**
 
--   Pending
+#### Claim Pending
 
--   Banker confirmation pending
+Cases submitted via the App or Web App with pending claims are categorized under "Claim Pending." Users can claim cases by clicking the **"Claim"** button, shifting them into one of the following:
 
--   Multi-Funded pending
+* **Pending:** Cases on hold for review before being forwarded to **NS**.
 
-**Claim Pending :** Cases submitted through the app and web app, whose
-claims are pending, are categorized under \"Claim Pending".
+* **Payout Pending:** Cases where the DSA's payout is not yet set.
 
-After entering the \"Claim Pending\" stage, cases can be claimed by
-clicking the \"Claim\" button. Once claimed, cases are shifted
-accordingly:
+* **Banker Confirmation Pending:** Cases awaiting confirmation from the banker.
 
--   **Pending:** Cases directly put on hold for review before being
-    > forwarded to NS.
+#### Payout Pending
 
--   **Payout Pending:** Cases where the DSA\'s payout is not yet set.
+Cases in **Payout Pending** require DSA payout configuration. Users can navigate to the DSA's profile by clicking the **dollar icon** and setting up the payout. After configuration, cases shift to:
 
--   **Banker Confirmation Pending:** Cases awaiting confirmation from
-    > the banker\'s side.
+* **Pending:** Cases on hold for review.
 
-**Payout Pending :** Those cases where the DSA payout is not set will
-fall under \"Payout Pending,\" where you can click on the dollar icon to
-directly go to the DSA\'s profile and set up the payout. After that, the
-case will shift accordingly.
+* **Banker Confirmation Pending:** Cases awaiting confirmation from the banker.
 
--   **Pending:** Cases that are on hold for review
+#### Pending
 
--   **Banker Confirmation Pending:** Cases where the banker\'s
-    > confirmation is still pending.
+This section contains cases that are ready for review. From here, cases can either be:
 
-**Pending:** This section contains cases that are clear from awaited
-sections, are put on hold for review. From here, cases can either be
-sent to ERP or deleted.
+* **Sent to ERP:** If reviewed and approved, cases are forwarded to the ERP system.
 
--   **Send to ERP:** If the case is reviewed and cleared, it can be
-    > forwarded to ERP.
+* **Deleted:** Cases that do not qualify for processing.
 
--   **Delete:** If the case is deleted.
+#### Banker Confirmation Pending
 
-**Banker Confirmation Pending:** This section contains cases where the
-banker\'s confirmation is still pending.
+Cases in this section await banker confirmation. Once received, the case moves to the **Pending** section for review.
 
--   **Pending:** Once the banker\'s confirmation is received, the case
-    > is moved to the pending section for review.
+#### Multi-Funded Pending
 
-**Multi-Funded Pending :** Cases with the same details as an already
-registered case. These require validation to avoid duplication and
-funding conflicts
+Cases with duplicate details matching an existing entry require validation to prevent funding conflicts. Possible outcomes include:
 
--   **Multi-Funded Confirmed:** If the case is confirmed as multi-funded
+* **Multi-Funded Confirmed:** If the case is confirmed as multi-funded.
 
--   **Rejected:** If the case is rejected as multi-funded
+* **Rejected:** If the case is deemed ineligible due to duplication.
 
-**And let\'s also understand the remaining two sections: Processed and
-Rejected -**
+### Understanding the Processed and Rejected Sections
 
-**Sent To ERP :** The cases that have been forwarded to the ERP system
-for integration are in the ''Sent to ERP'' section, which is handled by
-**NS.**
+#### Processed
 
--   **Approved cases:** Here are the Cases that have been reviewed and
-    > approved by NS.
+* **Sent To ERP:** Cases successfully forwarded to the ERP system for integration and managed by **NS.**
 
--   **WIP cases:** Here are the Cases that are still being handled by
-    > NS.
-
--   **Not Found cases:** The Cases that could not be located within the
-    > system, can also be searched by near-By cases functionality.
-
--   **Error Cases:** Cases with some issues come under Error cases.
-
-**Rejected :** Cases that do not meet requirements or encounter
-insurmountable issues are moved to the \'Rejected\' stage. It has two
-sections:
-
--   **Multi-Funded Confirmed:** Rejected cases due to confirmed
-    > multi-funding conflicts.
-
--   **Deleted:** Cases that are rejected on Pending phase
-
-## **Conclusion**
-
-The Ruloans CRM Finance Module ensures a systematic and transparent
-approach to managing financial workflows. This documentation serves as a
-guide to understanding the process flow, aiding stakeholders in
-navigating and optimizing the financial module within the CRM.
-
-For further queries or support, please contact the finance module
-support team.
+* **Approved Cases:** Cases review
