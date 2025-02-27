@@ -38,6 +38,12 @@
             ]
           },
           {
+            "group": "Finance",
+            "pages": [
+              "/crm/features/finance/claims/payout/index"
+            ]
+          },
+          {
             "group": "Utils",
             "pages": [
               "crm/utils/regex-help"
