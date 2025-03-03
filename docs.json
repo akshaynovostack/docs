@@ -25,13 +25,6 @@
         "tab": "Crm",
         "groups": [
           {
-            "group": "Release Notes",
-            "pages": [
-              "crm/release-notes/v3.0.0",
-              "crm/release-notes/v3.0.1"
-            ]
-          },
-          {
             "group": "Marketing",
             "pages": [
               "crm/features/marketing/event",
@@ -49,6 +42,13 @@
             "group": "Utils",
             "pages": [
               "crm/utils/regex-help"
+            ]
+          },
+          {
+            "group": "Release Notes",
+            "pages": [
+              "crm/release-notes/v3.0.0",
+              "crm/release-notes/v3.0.1"
             ]
           }
         ]
