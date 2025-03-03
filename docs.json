@@ -34,7 +34,8 @@
           {
             "group": "Marketing",
             "pages": [
-              "crm/features/marketing/events/event"
+              "crm/features/marketing/events/event",
+              "crm/features/marketing/emails/email"
             ]
           },
           {
