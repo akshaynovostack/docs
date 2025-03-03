@@ -60,21 +60,6 @@
           "anchor": "Documentation",
           "href": "https://docs.ruloans.com",
           "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Ruloans",
-          "href": "https://ruloans.com",
-          "icon": "user"
-        },
-        {
-          "anchor": "Ruconnect",
-          "href": "https://ruconnect.in",
-          "icon": "indian-rupee-sign"
-        },
-         {
-          "anchor": "Crm",
-          "href": "https://crm.ruloans.com",
-          "icon": "gauge"
         }
       ]
     }
