@@ -53,6 +53,28 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Ruconnect Webapp",
+        "groups": [
+          {
+            "group": "Release Notes",
+            "pages": [
+              "/b2b/webapp/release-notes/v0.0.1"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Ruconnect Application",
+        "groups": [
+          {
+            "group": "Release Notes",
+            "pages": [
+              "/b2b/app/release-notes/v0.0.1"
+            ]
+          }
+        ]
       }
     ],
     "global": {
