@@ -73,6 +73,14 @@
             "pages": [
               "/b2b/app/release-notes/v0.0.1"
             ]
+          },
+          {
+            "group": "Loans",
+            "pages": [
+              "/b2b/app/loans/home-loan/dmi-hl",
+              "/b2b/app/loans/lap/dmi-lap",
+              "/b2b/app/loans/business-loan/piramal-ubl"
+            ]
           }
         ]
       }
