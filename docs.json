@@ -36,7 +36,8 @@
           {
             "group": "Finance",
             "pages": [
-              "/crm/features/finance/claims/payout"
+              "/crm/features/finance/claims/payout",
+              "/crm/features/finance/claims/claim-through-excel"
             ]
           },
           {

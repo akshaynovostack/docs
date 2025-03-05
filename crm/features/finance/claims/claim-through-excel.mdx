@@ -1,0 +1,199 @@
+---
+title: Preparing and Uploading Vendor Claim Files in CRM  
+description: A comprehensive guide on how to prepare vendor claim files in Excel and upload them into the CRM system, covering mandatory fields, formatting, and troubleshooting.  
+---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ntThSJPQnrA?si=4l3JG_8BVfkJxSP9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen />
+
+## Introduction
+
+This document provides a step-by-step guide for preparing and uploading vendor claim files in CRM. It is intended for new users of the CRM system to ensure accurate and efficient claim processing.
+
+## Preparing the Vendor Claim File in Excel
+
+### 1. Accessing the CRM MIS Upload Format
+
+* Open the payout claim format file.
+
+* Refer to the "CRM MIS Upload Format" sheet.
+
+### 2. Following Instructions
+
+* The first row contains instructions and explanations for each column.
+
+* Pay close attention to the mandatory fields, which must be filled accurately.
+
+### 3. Starting from the Second Row
+
+* Begin entering data from the second row, where the headers are located.
+
+* Do not use the first row for data entry.
+
+### 4. Selecting Data from Drop-Down Lists
+
+* Use the drop-down lists for fields like month and bank names.
+
+* Avoid manual typing to ensure data consistency.
+
+### 5. Mandatory Fields
+
+* **Customer Loan Number:** Enter the customer's loan number.
+
+* **Split Disbursal Date:** Enter the disbursal date.
+
+* **Loan Amount:** Enter the loan amount.
+
+* **Vendor PAN Number:** This is a critical field. The PAN number must be mapped under your CRM profile.
+
+* **Bank Name:** Select the appropriate bank name from the drop-down list.
+
+* **Product:** Select the main product (e.g., PL, BL, HL, LAB) rather than sub-products.
+
+* **Rate/Ratio:** Specify the rate or ratio committed to the vendor.
+
+* **Business Category:** Select the appropriate business category (e.g., 11 for Loan to VC).
+
+### 6. Optional Fields
+
+* **Customer Name:** Enter the full name of the customer.
+
+* **City Leader Name/Code & Sub Leader Name:** Leave blank if you don't have the code.
+
+* **Vendor's Name:** If available, enter the vendor's name.
+
+* **Vendor Remark:** Add any relevant comments or remarks.
+
+### 7. Understanding Codes
+
+* **Bank Codes:** After selecting the bank, the corresponding bank code will appear. If you see "N/A" or a similar error, the bank may not be listed, or the format may be corrupted.
+
+* **Product Codes:** Selecting the main product will populate the corresponding product code.
+
+### 8. Handling Corrupted Files
+
+* If the format is corrupted, request a new file.
+
+* Alternatively, copy the necessary codes from the product master file.
+
+* Do not use corrupted files.
+
+### 9. Rate vs. Ratio
+
+* **Rate:** A fixed percentage paid to the vendor irrespective of the bank's payout.
+
+* **Ratio:** A percentage of the payout received from the bank that is passed on to the vendor.
+
+* Select the appropriate option based on your commitment to the vendor.
+
+### 10. Split Payments
+
+* Avoid split payments to multiple vendors for a single case.
+
+* Split payments complicate the TDS process.
+
+### 11. Borrower and Company Names
+
+* For BL (Business Loan) or LAB cases, the loan is typically booked under the company's name.
+
+* Capture the company name in the "Borrower Name" column and the proprietor/director name in the "Company Name" column.
+
+* If unsure, mention the customer name and bank name in columns V and W, respectively.
+
+### 12. Business Category Codes
+
+* Select the appropriate business category code.
+
+* "11" is generally used for fresh loan cases (Loan to VC).
+
+* "21" is used for tranche cases (Loan TR) when uploading subsequent tranches of a home loan.
+
+## Uploading the Vendor Claim File in CRM
+
+### 1. Preparing the Data
+
+* Select the data from the second row to the last row with data.
+
+* Copy the selected data (Ctrl+C).
+
+* Open a new Excel file (Ctrl+N).
+
+* Paste the copied data using "Paste Special" and select "Values."
+
+* Format the date columns to a standard date format.
+
+### 2. Saving the File
+
+* Save the file with a descriptive name, including the month, lot number, and date (e.g., "VendorClaims\_December2024\_Lot1\_03052025").
+
+* Proper naming conventions help in tracking files within CRM and in logs.
+
+### 3. Uploading to CRM
+
+* Log in to CRM.
+
+* Navigate to "Lead Form" > "Payout Claims" > "Pending Import" > "Upload Excel."
+
+* Select the prepared file and open it.
+
+* Click "Add" to upload the file.
+
+### 4. Processing and Verification
+
+* The system will take a few minutes to load the data.
+
+* Once loaded, the cases will appear in the pending section.
+
+* Verify the uploaded data for accuracy.
+
+* Update the rate or ratio if needed.
+
+### 5. Sending to ERP
+
+* Select the cases.
+
+* Click "Send to ERP."
+
+* The selected cases will move to the "Sent to ERP" section.
+
+### 6. Verifying Submission
+
+* In the "Sent to ERP" section, check for the internal UE and CRM ID.
+
+* The generation of these IDs confirms that the claim has reached the MIS team in Mumbai.
+
+## Troubleshooting
+
+* **File Errors:** If you encounter errors during upload, ensure that all mandatory fields are correctly filled and that the file format is correct.
+
+* **Bank/Product Codes:** If bank or product codes are not populating, verify the bank and product names and ensure that the master file is not corrupted.
+
+* **Duplicate Claims:** If you receive a duplicate claim error, ensure that you are using the correct business category code (e.g., "21" for tranche cases).
+
+## FAQ
+
+**Q: Which row should I start entering data in the Excel file?**
+A: Start entering data from the second row, where the headers are located. The first row contains instructions.
+
+**Q: What should I do if the bank or product codes are not populating?**
+A: Verify that you have selected the correct bank and product names from the drop-down lists. If the issue persists, the format file may be corrupted, and you should request a new file or copy the codes from the product master file.
+
+**Q: How do I handle split payments to multiple vendors?**
+A: Avoid split payments, as they complicate the TDS process. It is better to make one-to-one payments.
+
+**Q: What is the difference between 'Rate' and 'Ratio' when specifying vendor commitment?**
+A: 'Rate' is a fixed percentage paid to the vendor irrespective of the bank's payout. 'Ratio' is a percentage of the payout received from the bank that is passed on to the vendor.
+
+**Q: What business category code should I use for fresh loan cases?**
+A: Use business category code "11" for fresh loan cases (Loan to VC).
+
+**Q: What should I do if I get a duplicate claim error?**
+A: Ensure that you are using the correct business category code. For tranche cases, use "21" (Loan TR).
+
+**Q: How long does it take for the data to load into the CRM system after uploading the file?**
+A: The system typically takes a few minutes to load the data.
+
+## Additional Resources
+
+* Refer to other CRM training videos for a better understanding of the system.
+
+* Contact the support team for any queries or assistance.
