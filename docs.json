@@ -27,6 +27,7 @@
           {
             "group": "Marketing",
             "pages": [
+              "crm/features/marketing/analytics",
               "crm/features/marketing/event",
               "crm/features/marketing/email",
               "crm/features/marketing/whatsapp",
