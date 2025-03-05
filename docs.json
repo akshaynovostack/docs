@@ -66,6 +66,13 @@
             "pages": [
               "/b2b/webapp/release-notes/v0.0.1"
             ]
+          },
+          {
+            "group": "Loans",
+            "pages": [
+              "/b2b/webapp/loans/home-loan/dmi-hl",
+              "/b2b/webapp/loans/lap/dmi-lap"
+            ]
           }
         ]
       },
