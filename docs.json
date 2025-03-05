@@ -38,7 +38,7 @@
             "pages": [
               "/crm/features/finance/claims/payout",
               "/crm/features/finance/claims/claim-through-excel",
-              "/crm/features/finance/claims/preventing-loan-number-shrinking.mdx"
+              "/crm/features/finance/claims/preventing-loan-number-shrinking"
             ]
           },
           {
