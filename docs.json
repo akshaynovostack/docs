@@ -39,7 +39,7 @@
               "crm/features/marketing/whatsapp",
               "crm/features/marketing/sms",
               "crm/features/marketing/app-notifications",
-              "crm/features/marketing/crm-notifications",
+              "crm/features/marketing/crm-notification",
               "crm/features/marketing/bulk-calling"
             ]
           },
