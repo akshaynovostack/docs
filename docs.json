@@ -27,7 +27,7 @@
           {
             "group": "Channel Partner",
             "pages": [
-              "crm/features/channel-partner/dsa-merging"
+              "crm/features/dsa/channel-partner/dsa-merging"
             ]
           },
           {
