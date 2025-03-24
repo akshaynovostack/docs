@@ -52,6 +52,12 @@
             ]
           },
           {
+            "group": "Content",
+            "pages": [
+              "/crm/features/content/content-manager"
+            ]
+          },
+          {
             "group": "Utils",
             "pages": [
               "crm/utils/regex-help"
@@ -60,6 +66,7 @@
           {
             "group": "Release Notes",
             "pages": [
+              "crm/release-notes/v1.0.3-(2025-03-22)",
               "crm/release-notes/v1.0.2-(2025-02-28)",
               "crm/release-notes/v1.0.1-(2025-02-18)",
               "crm/release-notes/v1.0.0-(2025-02-14)"
