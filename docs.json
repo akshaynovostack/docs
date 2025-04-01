@@ -27,7 +27,16 @@
           {
             "group": "Channel Partner",
             "pages": [
-              "crm/features/dsa/channel-partner/dsa-merging"
+              "crm/features/dsa/channel-partner/dsa-merging",
+              "crm/features/dsa/channel-partner/instant-claim"
+            ]
+          },
+          {
+            "group": "Finance",
+            "pages": [
+              "/crm/features/finance/claims/payout",
+              "/crm/features/finance/claims/claim-through-excel",
+              "/crm/features/finance/claims/preventing-loan-number-shrinking"
             ]
           },
           {
@@ -44,17 +53,15 @@
             ]
           },
           {
-            "group": "Finance",
-            "pages": [
-              "/crm/features/finance/claims/payout",
-              "/crm/features/finance/claims/claim-through-excel",
-              "/crm/features/finance/claims/preventing-loan-number-shrinking"
-            ]
-          },
-          {
             "group": "Content",
             "pages": [
               "/crm/features/content/content-manager"
+            ]
+          },
+          {
+            "group": "Products",
+            "pages": [
+              "/crm/features/products/instant-claim"
             ]
           },
           {
@@ -88,6 +95,12 @@
             "pages": [
               "/b2b/webapp/loans/home-loan/dmi-hl",
               "/b2b/webapp/loans/lap/dmi-lap"
+            ]
+          },
+          {
+            "group": "My Earning",
+            "pages": [
+              "webapp/my-earnings/instant-claim"
             ]
           }
         ]
