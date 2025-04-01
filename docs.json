@@ -100,7 +100,7 @@
           {
             "group": "My Earning",
             "pages": [
-              "webapp/my-earnings/instant-claim"
+              "/b2b/webapp/my-earnings/instant-claim"
             ]
           }
         ]
